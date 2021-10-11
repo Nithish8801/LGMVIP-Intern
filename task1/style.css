@@ -1,0 +1,215 @@
+:root {
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0%;
+  height: 4rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+nav > .logo {
+  height: 4rem;
+}
+nav > .lnk {
+  font-size: 1.2rem;
+  padding: 1rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+nav > .lnk.push {
+  margin-left: auto;
+}
+nav > .lnk:hover {
+  background-color: rgba(182, 182, 182, 0.3);
+}
+
+nav > .lnk:active {
+  background-color: rgba(182, 182, 182, 0.5);
+}
+nav > .title {
+  font-size: 1.5rem;
+}
+body {
+  background-color: rgb(49, 49, 49);
+}
+.content {
+  padding: 0;
+  padding-top: 4rem;
+  max-width: 94rem;
+  margin: auto;
+}
+.content section {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  min-height: 10rem;
+  max-width: 100rem;
+  margin-top: auto;
+  margin: 3rem;
+  text-align: center;
+  display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 5rem;
+}
+.content section:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgb(95, 95, 95);
+}
+.content > section > div {
+  background-color: rgba(14, 14, 14, 0.815);
+  max-width: 50rem;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.content > section .title {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.content > section .subtitle {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.content > section .text {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#intro {
+  background-image: url(img/Games.jpg);
+  background-position: center;
+  min-width: 30rem;
+  min-height: 40rem;
+}
+
+#about {
+  background-image: url(img/ROG.jpg);
+  background-position: center;
+  min-width: 30rem;
+  min-height: 40rem;
+}
+
+#games {
+  color: white;
+  min-height: 10rem;
+  max-width: 100rem;
+  margin-top: auto;
+  margin: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  scroll-margin-top: 5rem;
+  scroll-snap-type: mandatory;
+}
+#games > section {
+  min-width: 50rem;
+  height: 30rem;
+  scrollbar-width: 5px;
+  scrollbar-color: #000000 #00000000;
+  scroll-snap-align: start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 10px black;
+}
+#games > section > div {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#games > section > div:hover {
+  opacity: 1;
+}
+#games > section > div > div {
+  height: 4rem;
+  width: 100%;
+  margin: 26rem 0 0 0;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#games > section > div > div button {
+  padding: 0.7rem;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0.2rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+#games > section > div > div button:hover {
+  box-shadow: 0 0 5px grey;
+  background-color: #7ab7df;
+  transform: scale(1.1);
+}
+
+#games > section > div > div button:active {
+  background-color: #3992ce;
+}
+.strikethrough {
+  text-decoration: line-through;
+  color: grey;
+  margin: 0 1rem 0 0;
+}
+
+#games::-webkit-scrollbar-track {
+  background-color: #00000000;
+}
+
+#games::-webkit-scrollbar {
+  height: 5px;
+  background-color: #00000000;
+}
+
+#games::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem;
+  margin: 0;
+}
+footer .title {
+  font-size: 2rem;
+  text-decoration: underline;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+footer .text {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
